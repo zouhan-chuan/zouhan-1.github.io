@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引入公共的样式 -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>兴趣</title>
+  </head>
+  <style>
+    /* 构造盒子的尺寸及定位 */
+    .container {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(./img/background.jpg);
+      /* 背景位置 */
+      background-position: center center;
+      /* 背景不平铺 */
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    /* flex布局 */
+    nav {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 60px;
+      width: 80%;
+      text-align: center;
+      font-size: 24px;
+    }
+    nav a {
+      display: block;
+      width: 160px;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+    }
+    main div {
+      width: 300px;
+      height: 600px;
+      margin: 15px 60px 0;
+      border-radius: 12px;
+      background-color: rgba(250, 235, 215, 0.6);
+    }
+    main div span{
+      margin-top: 12px;
+      display: block;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    main div p{
+      text-indent: 24px;
+    }
+    main div img{
+      width: 300px;
+      border-radius: 12px;
+    }
+  </style>
+  <!-- 构建表体 -->
+  <body>
+    <div class="container">
+      <!-- 构造表头 -->
+      <header>
+        <nav>
+          <!-- href引入不同页面 -->
+          <a href="./index.html">主页</a>
+          <a href="./hobby.html">兴趣</a>
+          <a href="./message.html">留言</a>
+          <a href="./resume.html">简历</a>
+        </nav>
+      </header>
+      <main>
+        <div>
+          <span>数学</span>
+          <p>吃早饭都想学的，学到最后没有数字全是字母的数学！</p>
+          <!-- src引入图片路径 -->
+          <img src="./img/数学.jpeg" alt="">
+        </div>
+        <div>
+          <span>游戏</span>
+          <p>130段全国标打野，巅峰前十选手，天赋与热爱成就实力！</p>
+          <img src="./img/游戏.jpeg" alt="">
+        </div>
+        <div>
+          <span>唱歌</span>
+          <p>唱歌也是一种释放压力，陶冶情操的好方法</p>
+          <img src="./img/唱歌.jpeg" alt="">
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
